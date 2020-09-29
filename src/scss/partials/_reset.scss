@@ -1,4 +1,8 @@
 /******************************* general styling*******************************/
+@include font('Roboto-Light', '../../assets/googleFonts/Roboto/Roboto-Light');
+@include font('Roboto-Regular', '../../assets/googleFonts/Roboto/Roboto-Regular');
+@include font('Roboto-Bold', '../../assets/googleFonts/Roboto/Roboto-Bold');
+
 * {
     margin:0;
     padding:0;
@@ -8,9 +12,6 @@
 html {
     overflow-x: hidden;
     body {
-        @include font('Roboto-Light', '../../assets/googleFonts/Roboto/Roboto-Light');
-        @include font('Roboto-Regular', '../../assets/googleFonts/Roboto/Roboto-Regular');
-        @include font('Roboto-Bold', '../../assets/googleFonts/Roboto/Roboto-Bold');
 
         font-family: 'Roboto-Light', sans-serif;
         background-color: $terColor;
