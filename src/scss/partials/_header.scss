@@ -1,0 +1,329 @@
+header {
+    /**====================================
+    * this is for header on mobile viewport
+    ====================================*/
+    .mobile-header {
+        font-size: 20px;
+        color:$priColor;
+        height:auto;
+        .mobile-nav {
+            
+            button {
+                color:$priColor;
+                &.ham-menu {
+                    text-align: left;
+                    margin-right:1rem;
+                    .fa-times {
+                        display:none;
+                    }
+                    // .fa-bars {
+                    //     display:none;
+                    // }
+                }
+            }
+            .m-logo {
+                text-align: left;
+                font-family: 'Roboto-Bold';
+                // font-weight: 700;
+            }
+            .sign-in-group {
+                .search-box {
+                    text-align: right;
+                }
+                .btn-label {
+                    font-size: 1rem;
+                    text-align: right;
+                    margin-right:0.5rem;
+                }
+                .fa-user {
+                    text-align: right;
+                }
+            }
+        }
+
+        .mobile-dropdown{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            display:none;
+            color:$terColor;
+            // position: absolute;
+            background-color: $priColor;
+            height:auto;
+            button {
+                color:$terColor;
+                &.mobile-menu {
+                    border:1px solid $priColor;
+                    width:12rem;
+                    padding:0.8rem 0;
+                    margin-bottom:1rem;
+                }
+            }
+            .en-country {
+                margin-top: 10rem;
+                padding:1.8rem;
+                button {
+                    background-color: $enCoMColor;
+                    width:10rem;
+                    margin:0.5rem auto;
+                    border-radius: 0.2rem;
+                    padding:1rem 1rem;
+                    text-align: left;
+                    .split-dropdown {
+                        text-align: right;
+                    }
+                }
+            }
+            .social-meida {
+                font-size:1.5rem;
+                margin:0 auto;
+                a {
+                    color: $terColor;
+                }
+            }
+        }
+
+        @media screen and (min-width: 64em) {
+            display:none;
+        }
+    }
+
+    /**====================================
+    * this is for submobile dropdown
+    ====================================*/
+
+    .submobile-dropdown {
+        display:none;
+        width:100vw;
+        height:auto;
+        padding-top:1rem;
+        // height:48rem;
+        // position: absolute;
+        color: $priColor;
+        background-color: $terColor;
+        margin-top:0;
+        button {
+            color: $priColor;
+            text-align: right;
+            &.exit-btn {
+                font-size:25px;
+            }
+        }
+        a {
+            color:$priColor;
+            margin-bottom: 0.5rem;
+        }
+        
+        /***********  for country mobile dropdown ***********/
+
+        &.co-dropdown-mobile {
+            // display:block;
+            .select-country {
+                font-size:22px;
+            }
+            .country-name {
+                font-size:18px;
+                font-family: 'Roboto-Regular';
+                // font-weight: 400;
+            }
+            .continent {
+                border-bottom: 1px solid $secColor;
+                .country-lists{
+                    display:none;
+                    height: 14rem;
+                    overflow-y: auto;
+                }
+                i {
+                    text-align: right;
+                    &.open {
+                        transform:rotate(180deg);
+                        display:none;
+                    }
+                }
+            }
+            
+            a {
+                width: 90%;
+                margin:0 auto;
+                color:$priColor;
+                margin: 0.5rem auto;
+            }
+        }
+    }
+    
+    /**====================================
+    * this is for header on large viewport
+    ====================================*/
+    .large-header{
+        display:none;
+        @media screen and (min-width: 64em) {
+            display:block;
+            color: $priColor;
+            button {
+                color:$priColor;
+                &.get-started {
+                    color:$terColor;
+                }
+            }
+
+            /***********this is for user bar styling***********/
+
+            #user-bar {
+                position: relative;
+                border-bottom: 1px solid $secColor;
+                .social-meida {
+                    a {
+                        color:$priColor;
+                    }
+                }
+                .en-country {
+                    .dropdown-menu {
+                        .btn-label {
+                            text-align: right;
+                        }
+                        .split-dropdown{
+                            margin-left:0.5rem;
+                            .fa-caret-up {
+                                display:none;
+                            }
+                        }
+
+                        /*********** for language desktop dropdown ******/
+
+                        &.lang {
+                            // position: relative;
+                            .dropdown-content {
+                                max-width: 13rem;
+                                display:none;
+                                position: absolute;
+                                // width:15%;
+                                padding-top:0.9375em;
+                                padding-bottom:0.9375em;
+                                top:3.375rem;
+                                left: 6rem;
+                                background-color: $terColor;
+                                @include box-shadow($shadowColor);
+                                overflow-y: auto;
+                                height:37.5rem;
+                                a {
+                                    color:$priColor;
+                                    font-size: 18px;
+                                    margin-bottom:0.3rem;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                
+                #sign-in-group {
+                    text-align: right;
+                }
+            }
+            
+            /***********this is for site nav styling***********/
+
+            #site-nav {
+                align-items: center;
+                #logo-text {
+                    font-size:35px;
+                    font-family: 'Roboto-Bold';
+                }
+                #site-menu{
+                    ul {
+                        // align-items: center;
+                        li{
+                            position: relative;
+                            .btn-label{
+                                margin-right:0.5rem;
+                            }
+                            .split-dropdown {
+                                text-align: center;
+                                .fa-caret-up {
+                                    display:none;
+                                }
+                            }
+                            .dropdown-content {
+                                padding-top:0.9375rem;
+                                padding-bottom:0.9375rem;
+                                display:none;
+                                position: absolute;
+                                top:3.3rem;
+                                // left:30rem;
+                                // width:15%;
+                                a {
+                                    color: $priColor;
+                                    text-align: left;
+                                    font-size:18px;
+                                    display:inline-block;
+                                    margin-bottom:0.5rem;
+                                }
+                                background-color: $terColor;
+                                @include box-shadow($shadowColor);
+                            }
+                            
+                        }
+                    }
+                }
+        
+            }
+        }
+    }
+
+    /**====================================
+    * this is for country desktop dropdown
+    ====================================*/
+
+    .co-dropdown-large {
+            display:none;
+            padding-top: 1rem;
+            @include box-shadow($shadowColor);
+            // padding-top:0.9375em;
+            // padding-bottom:0.9375em;
+            height:40.875rem;
+            color: $priColor;
+            background-color: $terColor;
+            // display:flex;
+            position: absolute;
+            top:0;
+            z-index: 100001;
+            width: 40%;
+            button {
+                color: $priColor;
+                text-align: right;
+                &.exit-btn {
+                    font-size:25px;
+                }
+            }
+            .select-country {
+                font-size:25px;
+            }
+            .country-name {
+                font-size:20px;
+                font-family: 'Roboto-Regular';
+                // font-weight: 400;
+            }
+            .continent {
+                border-bottom: 1px solid $secColor;
+                .country-lists{
+                    display:none;
+                    height: 10rem;
+                    overflow-y: auto;
+                }
+                i {
+                    text-align: right;
+                    &.open {
+                        transform:rotate(180deg);
+                        display:none;
+                    }
+                }
+            }
+            
+            a {
+                width: 90%;
+                margin:0 auto;
+                color:$priColor;
+                font-size:18px;
+                margin: 0.5rem auto;
+            }
+    }
+}

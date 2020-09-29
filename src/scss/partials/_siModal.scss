@@ -1,0 +1,133 @@
+    //this for for the sign-in modal content
+    .sign-in-wrapper {
+        color:$priColor;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        height:auto;
+        // overflow-y: hidden;
+        z-index:100001;
+        .sign-in-box {
+            background-color: $terColor;
+            max-width:50rem;
+            // height:60%;;
+            padding:1rem auto;
+            .close-btn {
+                &.fa-times {
+                    display:inline-block;
+                    font-size: 25px;
+                    color:$priColor;
+                    // width:100%;
+                    text-align: right;
+                    margin-top:1rem;
+                }
+            }
+            .sign-in-content {
+                max-width: 28rem;
+                margin-bottom:2rem;
+
+                @media screen and (min-width: 64em) {
+                    width:60%;
+                }
+                .title {
+                    font-size: 25px;
+                    margin-bottom:2rem;
+                    text-align: center;
+                    @media screen and (min-width: 64em) {
+                        font-size: 45px;
+                    }
+                }
+                .sign-in-media{
+                    button {
+                        background-color: $priColor;
+                        color:$terColor;
+                        padding-top: 1rem;
+                        padding-bottom:1rem;
+                        a {
+                            color:$terColor;
+                            margin-right:1rem;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                form {
+                    p {
+                        font-family: 'Roboto-Regular';
+                        margin-top:1rem;
+                    }
+                    .field {
+                        border:none;
+                        padding:0;
+                        margin:0.5rem 0;
+                        .input-label {
+                            font-size: 12px;
+                        }
+                        input {
+                            border:1px solid $secColor;
+                            height: 3rem;
+                        }
+                        &.sec-setting {
+                            div {
+                                display:flex; 
+                                align-items: center; 
+                                // justify-content: space-between;
+                                // width:30%;
+                                float: left;
+                                // font-weight: 300;
+                                input {
+                                    margin-right:0.5rem;
+                                }
+                            }
+
+                            // input {
+                            //     text-align: left;
+                            // }
+                            a {
+                                color: $priColor;
+                                font-size: 12px;
+                                margin-right:0;
+                                display:inline-block;
+                                float:right;
+                            }
+                            
+                            
+                            // span {
+                            //     display:inline-block;
+                            // }
+                        }
+                        &.submit-btn {
+                            div {
+                                height:100%;
+                                width:100%;
+                                input {
+                                    border-radius: 3px;
+                                    width:40%;
+                                    background-color: $priColor;
+                                    padding-top: 1rem;
+                                    padding-bottom:1rem;
+                                    color:$terColor;
+                                    border:none;
+                                    font-size: 14px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .no-account {
+                    font-size: 14px;
+                    span {
+                        font-family: 'Roboto-Regular';
+                        // font-weight: 400;
+                    }
+                }
+            }
+            
+        }
+        display: none;
+    }

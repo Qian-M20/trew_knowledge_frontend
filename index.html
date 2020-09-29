@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Coding Test Site">
+    <meta name="author" content="Qian Ma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QIAN's Frontend Developer Interview</title>
+    <!-- link to fontawesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- foundation XY grid -->
+    <link rel="stylesheet" href="dist/css/foundation.min.css">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <header> <!-- Document Header Starts -->
+
+        <!-- this is for mobile header -->
+
+        <div class="mobile-header grid-x">
+            <div class="mobile-nav grid-container grid-x grid-padding-y align-middle cell">
+
+                <!-- for ham menu and logo -->
+
+                <button class="ham-menu cell shrink">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="m-logo cell shrink grid-x align-left">Logo</div>
+                
+                <!-- for user sign in and search -->
+                
+                <div class="sign-in-group cell auto grid-x align-middle grid-margin-x">
+                    <button class="social-nav cell auto search-box"><i class="fas fa-search"></i></button>
+                    <button class="social-nav sign-in cell shrink grid-x align-middle">
+                        <p class="cell btn-label cell auto">Sign In</p>
+                        <i class="fas fa-user cell shrink"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- this is for mobile dropdown content -->
+
+            <div class="mobile-dropdown grid-x cell grid-padding-y">
+
+                <!-- this is for nav menus -->
+                <div class="cell grid-x  align-center">
+                    <div class="cell grid-x align-center mobile-menu-box">
+                        <button class="mobile-menu">Get Started</button>
+                    </div>
+                    <div class="cell grid-x align-center mobile-menu-box">
+                        <button class="mobile-menu">About Us</button>
+                    </div>
+                    <div class="cell grid-x align-center mobile-menu-box">
+                        <button class="mobile-menu">Resources</button>
+                    </div>
+                    <div class="cell grid-x align-center mobile-menu-box">
+                        <button class="mobile-menu">Library</button>
+                    </div>
+                    <div class="cell grid-x align-center mobile-menu-box">
+                        <button class="mobile-menu">Contact</button>
+                    </div>
+                </div>
+                
+                <div class="en-country cell grid-x">
+
+                    <!-- this is for en choices -->
+                    <div class="cell small-12">
+                        <button class="lang-mobile dropdown-menu grid-container grid-x cell small-12 align-center align-middle">
+                            <p class="btn-label cell small-10">En</p>
+                            <i class="fas fa-caret-down split-btn split-dropdown cell small-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- this is for country choices -->
+                    <div class="cell small-12">
+                        <button class="country-mobile dropdown-menu grid-container grid-x cell small-12 align-center align-middle">
+                            <p class="btn-label cell small-10">Country</p>
+                            <i class="fas fa-caret-down split-btn split-dropdown cell small-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- this is for social media -->
+                <div class="cell small-12">
+                    <ul class="social-meida cell grid-x align-bottom align-center grid-margin-x">
+                        <li class="cell shrink"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="cell shrink"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="cell shrink"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="cell shrink"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- this is for mobile en choices submobile-dropdown content -->
+
+        <div class="submobile-dropdown en-dropdown-mobile grid-container grid-x">
+            <button class="exit-btn cell">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="#" class="cell">Afrikaans</a>
+            <a href="#" class="cell">Albanian</a>
+            <a href="#" class="cell">Amharic</a>
+            <a href="#" class="cell">Arbic</a>
+            <a href="#" class="cell">Azerbaijani</a>
+            <a href="#" class="cell">Bangla</a>
+            <a href="#" class="cell">Basque</a>
+            <a href="#" class="cell">Belarusian</a>
+            <a href="#" class="cell">Bengali</a>
+            <a href="#" class="cell">Bosnian</a>
+            <a href="#" class="cell">Bulgarian</a>
+            <a href="#" class="cell">Calatan</a>
+            <a href="#" class="cell">Cebuano</a>
+            <a href="#" class="cell">Chichewa</a>
+            <a href="#" class="cell">Chinese (Simplified)</a>
+            <a href="#" class="cell">Chinese (Traditional)</a>
+            <a href="#" class="cell">Corsican</a>
+            <a href="#" class="cell">Croation</a>
+        </div>
+
+        <!-- this is for mobile country choices submobile-dropdown content -->
+        <div class="submobile-dropdown co-dropdown-mobile grid-container grid-x">
+            <div class="cell grid-x">
+                <div class="gap cell auto"></div>
+                <button class="exit-btn cell shrink">
+                    <i class="fas fa-times "></i>
+                </button>
+            </div>
+            <h4 class="cell select-country grid-x align-middle">Select Country</h4>
+            <div class="cell grid-padding-y grid-x align-middle continent">
+
+                <div class="cell grid-x align-middle continent-row">
+                    <p class='country-name cell auto'>Africa</p>
+                    <i class="fas fa-question close cell shrink"></i>
+                    <i class="fas fa-question open cell shrink"></i>
+                </div>
+
+                <div class="cell country-lists">
+                    <a href="#" class="grid-x">China</a>
+                    <a href="#" class="grid-x">Greenfields Indonesia</a>
+                    <a href="#" class="grid-x">India</a>
+                    <a href="#" class="grid-x">Iran</a>
+                    <a href="#" class="grid-x">Japan</a>
+                    <a href="#" class="grid-x">Korea (South)</a>
+                    <a href="#" class="grid-x">Pakistan</a>
+                </div>
+            </div>
+            <div class="cell grid-x grid-padding-y continent">
+                <div class="cell grid-x align-middle continent-row">
+                    <p class='country-name cell auto'>Asia</p>
+                    <i class="fas fa-question close cell shrink"></i>
+                    <i class="fas fa-question open cell shrink"></i>
+                </div>
+                <div class="cell country-lists">
+                    <a href="#" class="grid-x">China</a>
+                    <a href="#" class="grid-x">Greenfields Indonesia</a>
+                    <a href="#" class="grid-x">India</a>
+                    <a href="#" class="grid-x">Iran</a>
+                    <a href="#" class="grid-x">Japan</a>
+                    <a href="#" class="grid-x">Korea (South)</a>
+                    <a href="#" class="grid-x">Pakistan</a>
+                </div>
+            </div>
+            <div class="cell grid-padding-y grid-x align-middle continent">
+
+                <div class="cell grid-x align-middle continent-row">
+                    <p class='country-name cell auto'>Australia</p>
+                    <i class="fas fa-question cell close shrink"></i>
+                    <i class="fas fa-question open cell shrink"></i>
+                </div>
+
+                <div class="cell country-lists">
+                    <a href="#" class="grid-x">China</a>
+                    <a href="#" class="grid-x">Greenfields Indonesia</a>
+                    <a href="#" class="grid-x">India</a>
+                    <a href="#" class="grid-x">Iran</a>
+                    <a href="#" class="grid-x">Japan</a>
+                    <a href="#" class="grid-x">Korea (South)</a>
+                    <a href="#" class="grid-x">Pakistan</a>
+                </div>
+            </div>
+            <div class="cell grid-padding-y grid-x align-middle continent">
+
+                <div class="cell grid-x align-middle continent-row">
+                    <p class='country-name cell auto'>Europe - Middle East</p>
+                    <i class="fas fa-question close shrink"></i>
+                    <i class="fas fa-question open cell shrink"></i>
+                </div>
+
+                <div class="cell country-lists">
+                    <a href="#" class="grid-x">China</a>
+                    <a href="#" class="grid-x">Greenfields Indonesia</a>
+                    <a href="#" class="grid-x">India</a>
+                    <a href="#" class="grid-x">Iran</a>
+                    <a href="#" class="grid-x">Japan</a>
+                    <a href="#" class="grid-x">Korea (South)</a>
+                    <a href="#" class="grid-x">Pakistan</a>
+                </div>
+            </div>
+            <div class="cell grid-padding-y grid-x align-middle continent">
+
+                <div class="cell grid-x align-middle continent-row">
+                    <p class='country-name cell auto'>Latin Amecrica</p>
+                    <i class="fas fa-question close shrink"></i>
+                    <i class="fas fa-question open cell shrink"></i>
+                </div>
+
+                <div class="cell country-lists">
+                    <a href="#" class="grid-x">China</a>
+                    <a href="#" class="grid-x">Greenfields Indonesia</a>
+                    <a href="#" class="grid-x">India</a>
+                    <a href="#" class="grid-x">Iran</a>
+                    <a href="#" class="grid-x">Japan</a>
+                    <a href="#" class="grid-x">Korea (South)</a>
+                    <a href="#" class="grid-x">Pakistan</a>
+                </div>
+            </div>
+            <div class="cell grid-padding-y grid-x align-middle continent">
+
+                <div class="cell grid-x align-middle continent-row">
+                    <p class='country-name cell auto'>North Amecrica</p>
+                    <i class="fas fa-question cell close shrink"></i>
+                    <i class="fas fa-question open cell shrink"></i>
+                </div>
+
+                <div class="cell country-lists">
+                    <a href="#" class="grid-x">China</a>
+                    <a href="#" class="grid-x">Greenfields Indonesia</a>
+                    <a href="#" class="grid-x">India</a>
+                    <a href="#" class="grid-x">Iran</a>
+                    <a href="#" class="grid-x">Japan</a>
+                    <a href="#" class="grid-x">Korea (South)</a>
+                    <a href="#" class="grid-x">Pakistan</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- this is for large header -->
+
+        <div class="large-header grid-container">
+            <!-- for social media, language and country dropdown -->
+
+            <div id="user-bar" class=" grid-x  grid-margin-x grid-padding-y">
+
+                <div class="cell large-4 grid-x">
+                    <ul class="social-meida cell large-5 grid-x">
+                        <li class="social-nav cell large-3"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-nav cell large-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-nav cell large-3"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social-nav cell large-3"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+
+                    <ul class="en-country cell large-7 grid-x">
+
+                        <!-- this is for en choices dropdown content -->
+
+                        <li class="lang dropdown-menu cell large-3 grid-x">
+                            
+                            <div class="btn-label cell auto">En</div>
+                            <!-- <div class="gap cell large-1"></div> -->
+                            <button class="split-dropdown cell shrink split-btn">
+                                    <i class="fas fa-caret-down lang"></i>
+                                    <i class="fas fa-caret-up lang"></i>
+                            </button>
+
+                            <div class="lang dropdown-content grid-container grid-x">
+                                <a class="cell" href="#">Afrikaans</a>
+                                <a class="cell" href="#">Albanian</a>
+                                <a class="cell" href="#">Amharic</a>
+                                <a class="cell" href="#">Arbic</a>
+                                <a class="cell" href="#">Azerbaijani</a>
+                                <a class="cell" href="#">Bangla</a>
+                                <a class="cell" href="#">Basque</a>
+                                <a class="cell" href="#">Belarusian</a>
+                                <a class="cell" href="#">Bengali</a>
+                                <a class="cell" href="#">Bosnian</a>
+                                <a class="cell" href="#">Bulgarian</a>
+                                <a class="cell" href="#">Calatan</a>
+                                <a class="cell" href="#">Cebuano</a>
+                                <a class="cell" href="#">Chichewa</a>
+                                <a class="cell" href="#">Chinese (Simplified)</a>
+                                <a class="cell" href="#">Chinese (Traditional)</a>
+                                <a class="cell" href="#">Corsican</a>
+                                <a class="cell" href="#">Croation</a>
+                            </div>
+                            
+                        </li>
+                        
+
+                        <!-- this is for country choices dropdown content -->
+
+                        <li class="country dropdown-menu cell large-6 grid-x">
+                            <div class="btn-label cell auto">Country</div>
+                            <div class="split-dropdown cell shrink">
+                                <button class="split-btn">
+                                    <i class="fas fa-caret-down country"></i>
+                                    <i class="fas fa-caret-up country"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="gap cell large-6"></div>
+
+                <!-- for user sign in and search -->
+
+                <div class="sign-in-group cell large-2 grid-x">
+                    <div class="social-nav large-6"><i class="fas fa-search"></i></div>
+                    <button class="social-nav sign-in large-6 grid-x align-middle">
+                        <p class="cell btn-label large-9">Sign In</p>
+                        <i class="fas fa-user cell large-3"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+
+            <!-- for logo and site navigation  -->
+
+            <nav id="site-nav" class="grid-x grid-padding-y">
+                <div id="logo-text" class="cell large-1">Logo</div>
+                <div class="gap cell large-4"></div>
+                <div  id="site-menu" class="cell large-7 grid-x">
+                    
+                    <!-- for dropdpwn menus -->
+
+                    <ul class="grid-x large-9 align-middle">
+                        <li class="dropdown-menu grid-x large-3 align-center">
+                            <p class="btn-label">About Us</p>
+                            <button class="split-btn split-dropdown">
+                                <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-caret-up"></i>
+                            </button>
+                            <div class="dropdown-content grid-x grid-container grid-margin-x">
+                                <a class="cell" href="#">Link1</a>
+                                <a class="cell" href="#">Link2</a>
+                                <a class="cell" href="#">Link3</a>
+                                <a class="cell" href="#">Link4</a>
+                                <a class="cell" href="#">Link5</a>
+                                <a class="cell" href="#">Link6</a>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu grid-x align-center large-3">
+                            <p class="btn-label">Resources</p>
+                            <button class="split-btn split-dropdown">
+                                <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-caret-up"></i>
+                            </button>
+                            <div class="dropdown-content grid-x grid-container grid-margin-x">
+                                <a class="cell" href="#">Link1</a>
+                                <a class="cell" href="#">Link2</a>
+                                <a class="cell" href="#">Link3</a>
+                                <a class="cell" href="#">Link4</a>
+                                <a class="cell" href="#">Link5</a>
+                                <a class="cell" href="#">Link6</a>
+                            </div>
+                        </li> 
+                        <li class="dropdown-menu grid-x  align-center large-3">
+                            <p class="btn-label">Library</p>
+                            <button class="split-btn split-dropdown">
+                                <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-caret-up"></i>
+                            </button>
+                            <div class="dropdown-content grid-x grid-container grid-margin-x">
+                                <a class="cell" href="#">Link1</a>
+                                <a class="cell" href="#">Link2</a>
+                                <a class="cell" href="#">Link3</a>
+                                <a class="cell" href="#">Link4</a>
+                                <a class="cell" href="#">Link5</a>
+                                <a class="cell" href="#">Link6</a>
+                            </div>
+                        </li> 
+                        <li class="dropdown-menu grid-x align-center large-3">
+                            <p class="btn-label">Contact</p>
+                            <button class="split-btn split-dropdown">
+                                <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-caret-up"></i>
+                            </button>
+                            <div class="dropdown-content grid-x grid-container grid-margin-x">
+                                <a class="cell" href="#">Link1</a>
+                                <a class="cell" href="#">Link2</a>
+                                <a class="cell" href="#">Link3</a>
+                                <a class="cell" href="#">Link4</a>
+                                <a class="cell" href="#">Link5</a>
+                                <a class="cell" href="#">Link6</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <!-- for get started button -->
+
+                    <div class="grid-x cell large-3">
+                        <div class="gap cell auto"></div>
+                        <button class="primary-btn get-started shrink">Get Started</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- this is for desktop country choices Dropdown content -->
+
+        <div class="co-dropdown-large grid-container">
+                <div class="cell grid-x">
+                    <div class="gap cell auto"></div>
+                    <button class="exit-btn cell shrink">
+                        <i class="fas fa-times "></i>
+                    </button>
+                </div>
+    
+                <h4 class="cell select-country grid-x align-middle">Select Country</h4>
+                <div class="cell grid-padding-y grid-x align-middle continent">
+    
+                    <div class="cell grid-x align-middle">
+                        <p class='country-name cell auto continent-row'>Africa</p>
+                        <i class="fas fa-question close cell shrink"></i>
+                        <i class="fas fa-question open cell shrink"></i>
+                    </div>
+    
+                    <div class="cell country-lists">
+                        <a href="#" class="grid-x">China</a>
+                        <a href="#" class="grid-x">Greenfields Indonesia</a>
+                        <a href="#" class="grid-x">India</a>
+                        <a href="#" class="grid-x">Iran</a>
+                        <a href="#" class="grid-x">Japan</a>
+                        <a href="#" class="grid-x">Korea (South)</a>
+                        <a href="#" class="grid-x">Pakistan</a>
+                    </div>
+                </div>
+                <div class="cell grid-x grid-padding-y continent">
+                    <div class="cell grid-x align-middle continent-row">
+                        <p class='country-name cell auto'>Asia</p>
+                        <i class="fas fa-question close cell shrink"></i>
+                        <i class="fas fa-question open cell shrink"></i>
+                    </div>
+                    <div class="cell country-lists">
+                        <a href="#" class="grid-x">China</a>
+                        <a href="#" class="grid-x">Greenfields Indonesia</a>
+                        <a href="#" class="grid-x">India</a>
+                        <a href="#" class="grid-x">Iran</a>
+                        <a href="#" class="grid-x">Japan</a>
+                        <a href="#" class="grid-x">Korea (South)</a>
+                        <a href="#" class="grid-x">Pakistan</a>
+                    </div>
+                </div>
+                <div class="cell grid-padding-y grid-x align-middle continent">
+    
+                    <div class="cell grid-x align-middle continent-row">
+                        <p class='country-name cell auto'>Australia</p>
+                        <i class="fas fa-question cell close shrink"></i>
+                        <i class="fas fa-question open cell shrink"></i>
+                    </div>
+    
+                    <div class="cell country-lists">
+                        <a href="#" class="grid-x">China</a>
+                        <a href="#" class="grid-x">Greenfields Indonesia</a>
+                        <a href="#" class="grid-x">India</a>
+                        <a href="#" class="grid-x">Iran</a>
+                        <a href="#" class="grid-x">Japan</a>
+                        <a href="#" class="grid-x">Korea (South)</a>
+                        <a href="#" class="grid-x">Pakistan</a>
+                    </div>
+                </div>
+                <div class="cell grid-padding-y grid-x align-middle continent">
+    
+                    <div class="cell grid-x align-middle continent-row">
+                        <p class='country-name cell auto'>Europe - Middle East</p>
+                        <i class="fas fa-question close shrink"></i>
+                        <i class="fas fa-question open cell shrink"></i>
+                    </div>
+    
+                    <div class="cell country-lists">
+                        <a href="#" class="grid-x">China</a>
+                        <a href="#" class="grid-x">Greenfields Indonesia</a>
+                        <a href="#" class="grid-x">India</a>
+                        <a href="#" class="grid-x">Iran</a>
+                        <a href="#" class="grid-x">Japan</a>
+                        <a href="#" class="grid-x">Korea (South)</a>
+                        <a href="#" class="grid-x">Pakistan</a>
+                    </div>
+                </div>
+                <div class="cell grid-padding-y grid-x align-middle continent">
+    
+                    <div class="cell grid-x align-middle continent-row">
+                        <p class='country-name cell auto'>Latin Amecrica</p>
+                        <i class="fas fa-question close shrink"></i>
+                        <i class="fas fa-question open cell shrink"></i>
+                    </div>
+    
+                    <div class="cell country-lists">
+                        <a href="#" class="grid-x">China</a>
+                        <a href="#" class="grid-x">Greenfields Indonesia</a>
+                        <a href="#" class="grid-x">India</a>
+                        <a href="#" class="grid-x">Iran</a>
+                        <a href="#" class="grid-x">Japan</a>
+                        <a href="#" class="grid-x">Korea (South)</a>
+                        <a href="#" class="grid-x">Pakistan</a>
+                    </div>
+                </div>
+                <div class="cell grid-padding-y grid-x align-middle continent">
+    
+                    <div class="cell grid-x align-middle continent-row">
+                        <p class='country-name cell auto'>North Amecrica</p>
+                        <i class="fas fa-question cell close shrink"></i>
+                        <i class="fas fa-question open cell shrink"></i>
+                    </div>
+    
+                    <div class="cell country-lists">
+                        <a href="#" class="grid-x">China</a>
+                        <a href="#" class="grid-x">Greenfields Indonesia</a>
+                        <a href="#" class="grid-x">India</a>
+                        <a href="#" class="grid-x">Iran</a>
+                        <a href="#" class="grid-x">Japan</a>
+                        <a href="#" class="grid-x">Korea (South)</a>
+                        <a href="#" class="grid-x">Pakistan</a>
+                    </div>
+                </div>
+        </div>
+    </header> <!-- Document Header Ends -->
+
+    <!-- this is for the sign-in modal -->
+    
+    <div class="sign-in-wrapper grid-x align-middle">
+        <div class="cell grid-container">
+            <div class="sign-in-box grid-x grid-container align-center">
+                <div class="cell grid-x align-right align-middle">
+                    <button class="cell shrink">
+                        <i class="close-btn fas fa-times "></i>
+                    </button>
+                </div>
+                <div class="sign-in-content align-center cell grid-x">
+                    <h4 class='title cell'>Sign In</h4>
+                    <div class="grid-x align-spaced align-middle sign-in-media cell">
+                        <button class="cell small-5 grid-x align-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <p>Facebook</p>
+                        </button>
+                        <button class="cell small-5 grid-x align-center">
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <p>Google</p>
+                        </button>
+                    </div>
+                    <form class="sign-in-form cell grid-x" action="#" method="post">
+                        <p class="cell grid-x align-middle align-center">or</p>
+                        <div class="emailAccount field cell grid-x align-middle">
+                            <span class="input-label cell" id="email">Email</span>
+                            <input class="cell" type="text" name="email" placeholder="">
+                        </div>
+                        <div class="psw-account field cell grid-x align-middle">
+                            <span class="input-label cell" id="password">Password</span>
+                            <input class="cell" type="text" name="password" placeholder="">
+                        </div>
+                        <div class="sec-setting field cell grid-x align-middle align-justify">
+                            <div class="cell shrink grid-x">
+                                <input class="cell shrink" type="checkbox" name="rememberMe" checked>
+                                <span class="input-label cell shrink" id="rememberMe">Remember me</span>
+                            </div>
+                            <a class="cell shrink" href="#">Forget Password?</a>
+                        </div>
+                        <div class="submit-btn field cell">
+                            <div class="grid-x align-middle align-center">
+                                <input name="submit" id="signInSubmit" type="submit" value="Sign In">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="no-account cell grid-x align-center"><p>Haven't an account? <span>Sign Up</span></p></div>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="feature"> <!-- Feature Section Starts -->
+            <div class="grid-container grid-x align-middle feature-wrapper">
+                <div class="feature-img cell large-6 grid-x align-middle align-center">
+                    <img src="./assets/Component.svg" alt="img">
+                </div>
+                <div class="feature-text cell large-6 grid-x grid-margin-y align-left">
+                    <h2 class="title cell grid-x align-middle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h2>
+                    <!-- <div class="gap cell large-2 small-2"></div> -->
+                    <div class="cell get-started-btn grid-x align-top">
+                        <button class="primary-btn get-started-now">Get Started Now</button>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Feature Section Ends -->
+
+        <section class="intro-content grid-container grid-x"> <!-- intro-content Section Starts -->
+            <div class="intro-box cell large-auto grid-x">
+                <div class="intro-img cell small-4 large-12 grid-x align-center">
+                    <img src="./assets/Component.svg" alt="img">
+                </div>
+                <div class="intro-text cell small-8 large-12 grid-container">
+                    <h3 class="sec-title">Lorem Ipsum</h3>
+                    <p>Short description goes here Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+            </div>
+            <!-- <div class="gap cell large-1"></div> -->
+            <div class="intro-box cell grid-x large-auto">
+                <div class="intro-img cell small-4 large-12 grid-x align-center">
+                    <img src="./assets/Component.svg" alt="img">
+                </div>
+                <div class="intro-text cell small-8 large-12 grid-container">
+                    <h3 class="sec-title">Lorem Ipsum</h3>
+                    <p>Short description goes here Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+            </div>
+            <!-- <div class="gap cell large-1"></div> -->
+            <div class="intro-box cell grid-x large-auto">
+                <div class="intro-img cell small-4 large-12 grid-x align-center">
+                    <img src="./assets/Component.svg" alt="img">
+                </div>
+                <div class="intro-text cell small-8 large-12 grid-container">
+                    <h3 class="sec-title">Lorem Ipsum</h3>
+                    <p>Short description goes here Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+            </div>
+        </section> <!-- intro-content Section Ends -->
+
+        <section class="resources grid-container grid-margin-y">  <!-- Resources Section Starts-->
+            <h2 class="title grid-x align-center">Popular Resources</h2>
+            <div class="resource-content grid-x grid-margin-y">
+                <div class="cell grid-x first-row grid-margin-y">
+                    <div class="resource-box cell grid-x large-auto align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Lorem ipsum</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resource-box cell large-auto grid-x align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Nulla mollis</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resource-box cell large-auto grid-x align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Lorem ipsum</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resource-box cell large-auto grid-x align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Nulla mollis</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell grid-x second-row align-center grid-margin-y">
+                    <div class="resource-box cell large-3 grid-x align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Lorem ipsum</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resource-box cell large-3 grid-x align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Nulla mollis</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resource-box cell large-3 grid-x align-center grid-margin-y">
+                        <img class="cell resources-img" src="./assets/Component.svg" alt="img">
+                        <div class="cell resource-text grid-x align-center">
+                            <h4 class="ter-title cell">Lorem ipsum</h4>
+                            <p class="cell">Short description goes here Lorem Ipsum is simply dummy text.</p>
+                            <button class="learn-more cell">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Resources Section Ends-->
+
+        <section class="benefit grid-x grid-margin-y"> <!-- benefit Section Starts -->
+            <h2 class="title cell grid-x align-middle align-center grid-container">Join The Major Community Of
+                Farmers Around The World</h2>
+            <div class="cell grid-x benefit-content grid-margin-y grid-container">
+                <div class="benefit-box cell large-auto grid-x grid-margin-y">
+                    <div class="cell imgBox grid-x align-center align-middle">
+                        <img src="./assets/Component.svg" alt="img">
+                    </div>
+                    <div class="cell text-box grid-container grid-x grid-margin-y">
+                        <h4 class="sec-title cell">Benefits Title goes here</h4>
+                        <p class="cell">Benefit Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="benefit-box cell large-auto grid-x grid-margin-y">
+                    <div class="cell imgBox grid-x align-center align-middle">
+                        <img src="./assets/Component.svg" alt="img">
+                    </div>
+                    <div class="cell text-box grid-container grid-x grid-margin-y">
+                        <h4 class="sec-title cell">Benefits Title goes here</h4>
+                        <p class="cell">Benefit Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="benefit-box cell large-auto grid-x grid-margin-y">
+                    <div class="cell imgBox grid-x align-center align-middle">
+                        <img src="./assets/Component.svg" alt="img">
+                    </div>
+                    <div class="cell text-box grid-container grid-x grid-margin-y">
+                        <h4 class="sec-title cell">Benefits Title goes here</h4>
+                        <p class="cell">Benefit Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell button grid-x align-center align-bottom grid-container">
+                <button class="join-btn primary-btn">Join</button>
+            </div>
+        </section> <!-- benefit Section Ends -->
+    </main>
+
+    <footer class="grid-x grid-margin-y"> <!-- Footer section Starts -->
+        <div class="footer-logo cell grid-x align-center grid-container">Logo</div>
+        <ul class="grid-x grid-container footer-nav cell grid-margin-y align-middle align-center">
+            <li class="cell large-auto align-center"><a href="#">About us</a></li>
+            <li class="cell large-auto align-center"><a href="#">Resources</a></li>
+            <li class="cell large-auto align-center"><a href="#">Library</a></li>
+            <li class="cell large-auto align-center"><a href="#">Get Started</a></li>
+            <li class="cell large-auto align-center"><a href="#">Contact Us</a></li>
+            <li class="cell large-auto align-center"><a href="#">Newsroom</a></li>
+            <li class="cell large-shrink align-center"><a href="#">Careers</a></li>
+        </ul>
+        <div class="cell grid-container social-terms grid-x align-justify align-middle grid-margin-y">
+            <ul class="social-media cell small-12 large-shrink grid-x align-center">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <ul class="terms cell small-12 large-auto grid-x align-center">
+                <li>Privacy</li>
+                <li>Terms of Use</li>
+                <li>Site Map</li>
+            </ul>
+        </div>
+    </footer> <!-- Footer section Ends -->
+    
+
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

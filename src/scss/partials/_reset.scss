@@ -1,0 +1,29 @@
+/******************************* general styling*******************************/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    body {
+        @include font('Roboto-Light', '../../assets/googleFonts/Roboto/Roboto-Light');
+        @include font('Roboto-Regular', '../../assets/googleFonts/Roboto/Roboto-Regular');
+        @include font('Roboto-Bold', '../../assets/googleFonts/Roboto/Roboto-Bold');
+
+        font-family: 'Roboto-Light', sans-serif;
+        background-color: $terColor;
+
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            // color: $priColor;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight:300;
+        }
+    }
+}

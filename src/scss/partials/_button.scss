@@ -1,0 +1,35 @@
+
+button {
+    background-color: transparent;
+    border:0;
+    // color: $priColor;
+    outline:none;
+    &.primary-btn {
+        background-color: $priColor;
+        color: $terColor;
+        // font-weight: 300;
+        border-radius: 5px;
+        &.get-started {
+            padding: 0.8rem 1rem;
+            font-size:14px;
+        }
+        &.get-started-now {
+            padding: 1rem 3rem;
+            font-size: 14px;
+            margin:0 auto;
+            @media screen and (min-width: 64em) {
+                font-size: 20px;
+                margin-left:0;
+            }
+        }
+        &.join-btn {
+            padding: 1rem 4rem;
+            font-size:14px;
+            line-height: 20px;
+        }
+        :hover {
+            cursor: pointer;
+        }
+    }
+    
+}
