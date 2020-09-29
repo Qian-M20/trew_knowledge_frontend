@@ -4,7 +4,9 @@ button {
     border:0;
     // color: $priColor;
     outline:none;
+    cursor: pointer;
     &.primary-btn {
+
         background-color: $priColor;
         color: $terColor;
         // font-weight: 300;
@@ -12,6 +14,7 @@ button {
         &.get-started {
             padding: 0.8rem 1rem;
             font-size:14px;
+            cursor: pointer;
         }
         &.get-started-now {
             padding: 1rem 3rem;
@@ -27,9 +30,7 @@ button {
             font-size:14px;
             line-height: 20px;
         }
-        :hover {
-            cursor: pointer;
-        }
+        
     }
     
 }
