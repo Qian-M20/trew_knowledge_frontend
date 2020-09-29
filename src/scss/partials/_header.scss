@@ -177,13 +177,15 @@ header {
                 }
                 .en-country {
                     .dropdown-menu {
-                        .btn-label {
-                            text-align: right;
-                        }
+                        
                         .split-dropdown{
                             margin-left:0.5rem;
                             .fa-caret-up {
                                 display:none;
+                            }
+                            .btn-label {
+                                text-align: right;
+                                margin-right:0.5rem;
                             }
                         }
 
@@ -247,7 +249,7 @@ header {
                                 padding-bottom:0.9375rem;
                                 display:none;
                                 position: absolute;
-                                top:3.3rem;
+                                top:3rem;
                                 // left:30rem;
                                 // width:15%;
                                 a {
@@ -304,6 +306,11 @@ header {
             }
             .continent {
                 border-bottom: 1px solid $secColor;
+                .continent-row {
+                    :hover {
+                        cursor: pointer;
+                    }
+                }
                 .country-lists{
                     display:none;
                     height: 10rem;
